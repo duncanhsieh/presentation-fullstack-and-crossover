@@ -5,6 +5,7 @@
 // thanks to Stylus' "import css" and "paths" options
 
 @import 'prism/themes/prism-okaidia.css'
+@import 'fontawesome/css/font-awesome.css'
 // Check out "bower_components/prism/themes/" for available themes
 
 ixda_green = #55c4c4
@@ -17,6 +18,10 @@ ixda_blue = #296098
 fanzytv_green = #67BF97
 fanzytv_blue = #4875B9
 
+body
+  font-family: 'Noto Sans'
+  font-size 24px
+
 a
   color: ixda_green
   text-decoration: none
@@ -25,7 +30,34 @@ a
   img.avatar
     display: block
     margin: 0 auto
-    width: 120px
-    height: 120px
-    border-radius: 120px
+    width: 160px
+    height: 160px
+    border-radius: 160px
 
+article.bespoke-parent.fanzytv-blue
+  background-color: fanzytv_blue
+
+article.bespoke-parent.pencake
+  background: url(../images/pencake.jpg) no-repeat top left / cover
+  .dark-mask
+    background: rgba(0,0,0,0.3)
+
+article.bespoke-parent.mren
+  background: url(../images/mren.png) no-repeat top left / cover
+  .dark-mask
+    background: rgba(0,0,0,0.8)
+
+img.ixda-logo
+  width: 480px
+
+img.fanzytv-logo
+  width: 480px
+
+img.fullstack-logo
+  width: 360px
+
+img.frontend-backend
+  width: 480px
+
+img.mren
+  width: 640px

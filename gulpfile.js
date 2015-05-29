@@ -59,6 +59,15 @@ gulp.task('images', ['clean:images'], function() {
     .pipe(connect.reload());
 });
 
+gulp.task('fonts', ['clean:fonts'], function() {
+  return gulp.src(['bower_components/fontawesome/fonts/fontawesome-webfont.*'])
+    .pipe(gulp.dest('dist/fonts'));
+});
+
+gulp.task('clean:fonts', function(done) {
+  del('dist/fonts', done);
+});
+
 gulp.task('clean', function(done) {
   del('dist', done);
 });
@@ -104,7 +113,7 @@ gulp.task('deploy', ['build'], function(done) {
   ghpages.publish(path.join(__dirname, 'dist'), { logger: gutil.log }, done);
 });
 
-gulp.task('build', ['js', 'html', 'css', 'images']);
+gulp.task('build', ['js', 'html', 'css', 'images', 'fonts']);
 
 gulp.task('serve', ['open', 'watch']);
 

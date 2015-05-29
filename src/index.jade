@@ -4,82 +4,67 @@ html
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
     title 培養全端能力與跨領域學習
-
     link(rel='stylesheet', type='text/css', href='build/build.css')
 
   body
-
     article
-
       section.cover
         h1 培養全端能力與跨領域學習
         h3
           a(href='https://fb.me/loveyou.tw', target="_blank") <i class="fa fa-facebook-official"></i> Duncan Hsieh
         img.avatar(src='images/profile.jpg')
+        h5
+          | press &nbsp;
+          i.fa.fa-arrow-right
 
       section
-        img.logo(src='images/ixda_brandidentity.svg')
-        h3
+        img.ixda-logo(src='images/ixda_brandidentity.svg')
+        h2
           a(href='https://fb.me/ixda.tw', target="_blank")
             i.fa.fa-camera
-            span &nbsp; 理事 @ 台灣互動設計協會
+            span &nbsp; @ 台灣互動設計協會
 
       section.emphatic-text(data-bespoke-backdrop='emphatic', data-bespoke-state='fanzytv-blue')
-        img.logo(src='images/logo.svg')
-        h3 資深<del> 經理 </del> 雜工
+        img.fanzytv-logo(src='images/logo.svg')
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic', data-bespoke-state='fanzytv-blue')
+        h2.bullet 我的工作是?
+        h3.bullet
+          del 前端
+          | &nbsp;工程師
+        i.bullet.fa.fa-arrow-down
+        h3.bullet 
+          | 全端工程師
+
+      section.emphatic-text.dark-mask(data-bespoke-backdrop='emphatic', data-bespoke-state='pencake')
+        h5 &nbsp;
+        h5 &nbsp;
+        h2 什麼是全端工程師?
+        h5 &nbsp;
+        h5 
+          | Photo by &nbsp;
+          a(href='https://www.flickr.com/photos/hedvigs/12591933913/in/photostream/', target='_blank') hedvigs
+          | &nbsp;CC-BY
 
       section
-        h2 Keyboard Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
+        h3 前端 + 後端 = 全端工程師?
+        img.frontend-backend(src='images/frontend-backend.jpg')
+        h5 
+          | Source&nbsp;
+          a(href='http://aprendizweb.com.br/front-end-e-back-end/', target='_blank') Patryck Gratão
+
+      section.emphatic-text.dark-mask(data-bespoke-backdrop='emphatic', data-bespoke-state='mren')
+        h2 非常好
+        h2 我第一份工作就是全端工程師了!
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic', data-bespoke-state='mren')
 
       section
-        h2 Touch Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a>
+        h2 2004 年
+        h3 誤打誤撞，一個工程師自幹一個電商網站。
+        h3 從沒想過自己寫的程式可以運作 11 年以上!
 
-      section
-        h2 Responsive Slides
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a>
-
-      section
-        h2 Bullet List
-        h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
-        ul
-          li Bullet 1
-          li Bullet 2
-          li Bullet 3
-
-      section
-        h2 Syntax Highlighting
-        h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
-        pre
-          code.language-javascript.
-            bespoke.from('article', [
-              classes(),
-              keys(),
-              touch(),
-              bullets('li, .bullet')
-            ]);
-
-      section(data-bespoke-hash='named-route')
-        h2 Named Route
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
-        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
-
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
-        h2 Emphatic Slide!
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
-
-      section
-        h2.bullet Just the beginning...
-        br
-        ul
-          li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
-          li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
-          li Edit JavaScript in <em>'src/scripts/main.js'</em>
-        br
-        ul
-          li
-            strong Enjoy! :)
-            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
+      section.emphatic-text.dark-mask(data-bespoke-backdrop='emphatic', data-bespoke-state='pencake')
+        h2 Fullstack Developer
 
     script(src='build/build.js')

@@ -1,0 +1,3 @@
+[submodule "node_modules/bespoke-theme-ixda"]
+	path = node_modules/bespoke-theme-ixda
+	url = https://duncanhsieh@github.com/duncanhsieh/bespoke-theme-ixda.git
